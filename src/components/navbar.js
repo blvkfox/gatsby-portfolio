@@ -3,14 +3,17 @@ import { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [menuState, setMenuState] = useState(false);
-  console.log(menuState);
   const handleClick = (e) => {
     if (menuState === false) {
       setMenuState(true);
     } else {
       setMenuState(false);
     }
-    console.log(menuState);
+  };
+  const handleLinkClick = (e) => {
+    if (menuState === true) {
+      setMenuState(false);
+    }
   };
   return (
     <header class='navbar-header'>
@@ -26,7 +29,7 @@ const Navbar = () => {
           <span></span>
         </div>
         <ul class={menuState ? 'flex navbar-nav open-nav' : 'flex navbar-nav '}>
-          <a href='#top' class='link'>
+          <a href='#top' class='link' onClick={handleLinkClick}>
             <li
               class='
                 w-4/5
@@ -41,7 +44,7 @@ const Navbar = () => {
               home
             </li>
           </a>
-          <a href='#portfolio' class='link'>
+          <a href='#portfolio' class='link' onClick={handleLinkClick}>
             <li
               class='
                 w-4/5
@@ -56,7 +59,7 @@ const Navbar = () => {
               portfolio
             </li>
           </a>
-          <a href='#about' class='link'>
+          <a href='#about' class='link' onClick={handleLinkClick}>
             <li
               class='
                 w-4/5
@@ -71,7 +74,7 @@ const Navbar = () => {
               about
             </li>
           </a>
-          <a href='# ' class='link'>
+          <a href='# ' class='link' onClick={handleLinkClick}>
             <li
               class='
                 w-4/5
@@ -86,7 +89,7 @@ const Navbar = () => {
               blog
             </li>
           </a>
-          <a href='#contact' class='link'>
+          <a href='#contact' class='link' onClick={handleLinkClick}>
             <li
               class='
                 w-4/5
