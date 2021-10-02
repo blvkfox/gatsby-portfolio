@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 const About = () => {
   return (
     <section
-      class='mt-8 mb-8 w-4/5 mx-auto flex flex-col md:flex-row justify-center'
+      class='about mt-8 mb-8 w-4/5 mx-auto flex flex-col md:flex-row justify-center'
       id='about'
     >
       <StaticImage
@@ -15,8 +15,8 @@ const About = () => {
       <div class='w-full md:w-5/12 flex flex-col justify-center'>
         <h2 class='text-2xl font-bold mb-2'>About</h2>
         <p class='max-w-lg mb-2'>
-          Hello, my name is Jordan. I’m a creative full stack developer ui/ux
-          specialist based in Edmonton, Alberta.
+          Hello, my name is Jordan. I’m a creative full stack developer and
+          ui/ux specialist based in Edmonton, Alberta.
         </p>
         <p class='max-w-lg mb-2'>
           Check out my blog for some of the latest tips, and tricks i’ve learned

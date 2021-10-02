@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [menuState, setMenuState] = useState(false);
+  console.log(menuState);
   const handleClick = (e) => {
     if (menuState === false) {
       setMenuState(true);
@@ -24,7 +25,7 @@ const Navbar = () => {
           <span></span>
           <span></span>
         </div>
-        <ul class={menuState ? 'flex navbar-nav' : 'flex navbar-nav open-nav'}>
+        <ul class={menuState ? 'flex navbar-nav open-nav' : 'flex navbar-nav '}>
           <a href='#top' class='link'>
             <li
               class='

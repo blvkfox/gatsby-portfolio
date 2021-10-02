@@ -5,11 +5,12 @@ import Portfolio from './../components/portfolio';
 import Services from './../components/services';
 import About from './../components/about';
 import Contact from './../components/contact';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <Hero />
+    <Layout class='static'>
+      <Hero className='z-10 static' />
       <Services />
       <Portfolio />
       <About />

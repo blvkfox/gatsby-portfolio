@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Portfolio = () => {
   return (
-    <section className='mt-6 py-8 w-4/5 mx-auto' id='portfolio'>
+    <section className='portfolio mt-6 py-8 w-4/5 mx-auto' id='portfolio'>
       <h2 className='text-3xl mb-4 font-bold'>Projects</h2>
       <p className='mb-4'>
         From web components to ui and ux designs with React, Redux, HTML, CSS,
